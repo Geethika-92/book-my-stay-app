@@ -9,7 +9,7 @@
  */
 
 import java.util.*;
-
+// PR trigger change for UseCase6
 class Reservation {
     private String guestName;
     private String roomType;
