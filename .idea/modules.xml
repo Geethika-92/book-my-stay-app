@@ -3,8 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/GEETHIKA 028.iml" filepath="$PROJECT_DIR$/.idea/GEETHIKA 028.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UseCase1HotelBookingApp/UseCase1HotelBookingApp.iml" filepath="$PROJECT_DIR$/UseCase1HotelBookingApp/UseCase1HotelBookingApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/UseCase2RoomInitialization/UseCase2RoomInitialization.iml" filepath="$PROJECT_DIR$/UseCase2RoomInitialization/UseCase2RoomInitialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UseCase3InventorySetup/UseCase3InventorySetup.iml" filepath="$PROJECT_DIR$/UseCase3InventorySetup/UseCase3InventorySetup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UseCase3InventorySetup.java/UseCase3InventorySetup.java.iml" filepath="$PROJECT_DIR$/UseCase3InventorySetup.java/UseCase3InventorySetup.java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UseCase4RoomSearch/UseCase4RoomSearch.iml" filepath="$PROJECT_DIR$/UseCase4RoomSearch/UseCase4RoomSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UseCase5BookingRequestQueue/UseCase5BookingRequestQueue.iml" filepath="$PROJECT_DIR$/UseCase5BookingRequestQueue/UseCase5BookingRequestQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UseCase6RoomAllocationService/UseCase6RoomAllocationService.iml" filepath="$PROJECT_DIR$/UseCase6RoomAllocationService/UseCase6RoomAllocationService.iml" />
     </modules>
   </component>
 </project>

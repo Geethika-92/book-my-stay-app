@@ -1,10 +1,11 @@
 /**
- * UseCase3InventorySetup
+ * UseCase2RoomInitialization
  *
- * Demonstrates basic inventory setup for rooms in the Hotel Booking System.
- * Introduces managing inventory using arrays to prepare for scalable booking.
+ * Demonstrates basic room types and their static availability
+ * for the Hotel Booking System using object-oriented concepts:
+ * abstraction, inheritance, and polymorphism.
  *
- * Version: 3.1
+ * Version: 2.1
  * Author: Geethika
  */
 
@@ -22,10 +23,11 @@ abstract class Room {
         this.price = price;
     }
 
+    // Abstract method to display room details
     public abstract void displayRoomDetails();
 }
 
-// Concrete classes for different room types
+// Concrete class for Single Room
 class SingleRoom extends Room {
     public SingleRoom() {
         super("Single Room", 1, 15.0, 1000.0);
@@ -37,6 +39,7 @@ class SingleRoom extends Room {
     }
 }
 
+// Concrete class for Double Room
 class DoubleRoom extends Room {
     public DoubleRoom() {
         super("Double Room", 2, 25.0, 1800.0);
@@ -48,6 +51,7 @@ class DoubleRoom extends Room {
     }
 }
 
+// Concrete class for Suite Room
 class SuiteRoom extends Room {
     public SuiteRoom() {
         super("Suite Room", 3, 40.0, 3500.0);
@@ -59,45 +63,35 @@ class SuiteRoom extends Room {
     }
 }
 
-// Main class for Use Case 3
-public class UseCase3InventorySetup {
+// Main class for Use Case 2
+public class UseCase2RoomInitialization {
+
+    // Static availability for each room type
+    static int availableSingleRooms = 5;
+    static int availableDoubleRooms = 3;
+    static int availableSuiteRooms = 2;
 
     public static void main(String[] args) {
 
         System.out.println("****************************************");
-        System.out.println(" Hotel Booking System v3.1 - Inventory Setup ");
+        System.out.println(" Hotel Booking System v2.1 - Room Info ");
         System.out.println("****************************************\n");
 
-        // Inventory arrays
-        Room[] singleRooms = new SingleRoom[5];  // 5 single rooms
-        Room[] doubleRooms = new DoubleRoom[3];  // 3 double rooms
-        Room[] suiteRooms = new SuiteRoom[2];    // 2 suites
+        // Create room objects
+        Room single = new SingleRoom();
+        Room doubleR = new DoubleRoom();
+        Room suite = new SuiteRoom();
 
-        // Initialize inventory
-        for (int i = 0; i < singleRooms.length; i++) {
-            singleRooms[i] = new SingleRoom();
-        }
-        for (int i = 0; i < doubleRooms.length; i++) {
-            doubleRooms[i] = new DoubleRoom();
-        }
-        for (int i = 0; i < suiteRooms.length; i++) {
-            suiteRooms[i] = new SuiteRoom();
-        }
+        // Display room details and availability
+        single.displayRoomDetails();
+        System.out.println("Available: " + availableSingleRooms + "\n");
 
-        // Display inventory details
-        System.out.println("Single Rooms:");
-        for (Room r : singleRooms) {
-            r.displayRoomDetails();
-        }
-        System.out.println("\nDouble Rooms:");
-        for (Room r : doubleRooms) {
-            r.displayRoomDetails();
-        }
-        System.out.println("\nSuite Rooms:");
-        for (Room r : suiteRooms) {
-            r.displayRoomDetails();
-        }
+        doubleR.displayRoomDetails();
+        System.out.println("Available: " + availableDoubleRooms + "\n");
 
-        System.out.println("\nInventory setup completed successfully.");
+        suite.displayRoomDetails();
+        System.out.println("Available: " + availableSuiteRooms + "\n");
+
+        System.out.println("Application has displayed all room information successfully.");
     }
 }
