@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/UseCase10BookingCancellation/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UseCase7AddOnServiceSelection/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UseCase8BookingHistoryReport/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UseCase9ErrorHandlingValidation/src" isTestSource="false" />
